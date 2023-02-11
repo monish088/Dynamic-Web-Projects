@@ -1,0 +1,33 @@
+import java.sql.*;
+
+
+public class EmployeeDao {
+	public int registerEmployee(Employee employee) throws ClassNotFoundException {
+		String INSERT_USERS_SQL = "INSERT INTO employee" + "(id, first_name, username, password, address, contact) VALUES" + "(?,?,?,?,?,?,?);";
+		
+		int result =0;
+		try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","Monish@882529");
+				PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
+			preparedStatement.setInt(1,1);
+			preparedStatement.setString(2, employee.getFirstName());
+			preparedStatement.setString(2, employee.getLastName());
+			preparedStatement.setString(2, employee.getUsername());
+			preparedStatement.setString(2, employee.getPassword());
+			preparedStatement.setString(2, employee.getAddress());
+			preparedStatement.setString(2, employee.getContact());
+			
+			System.out.println(preparedStatement);
+			result= preparedStatement.executeUpdate();
+		} catch (SQLException e) {
+			//printSQLException(e);
+			System.out.println(e);
+		}
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

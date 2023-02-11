@@ -1,0 +1,25 @@
+package first;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.sql.SQLException;
+
+public class DeleteStatement {
+	public static final String DELETE_USERS_SQL = "delete from users1 where  id=3;";
+
+	public static void main(String[] args) throws SQLException  {
+		
+		System.out.println(DELETE_USERS_SQL);
+		try ( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/advjava","root","Monish@882529");
+				Statement st = conn.createStatement();) {
+			int result = st.executeUpdate(DELETE_USERS_SQL);
+			System.out.println("Number of records affected:" + result);
+		} catch (SQLException e) {
+			System.out.println("Got an exception");
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}

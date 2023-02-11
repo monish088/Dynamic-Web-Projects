@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\FSP\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2241657898.index
+4066803413.index
+1100421771.index
+3324372664.index
+2267522730.index
+2110580172.index
+2123661789.index

@@ -1,0 +1,17 @@
+127.0.0.1 - - [01/Feb/2023:14:43:32 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [01/Feb/2023:15:51:27 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [01/Feb/2023:15:51:29 +0530] "GET /FirstServlet/ServletImpl HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [01/Feb/2023:15:51:29 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [01/Feb/2023:15:54:33 +0530] "GET /FirstServlet/ServletImpl HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [01/Feb/2023:15:54:33 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [01/Feb/2023:15:59:10 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [01/Feb/2023:15:59:11 +0530] "GET /FirstServlet/ServletImpl HTTP/1.1" 200 58
+0:0:0:0:0:0:0:1 - - [01/Feb/2023:15:59:11 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [01/Feb/2023:16:48:05 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [01/Feb/2023:16:48:08 +0530] "GET /FirstServlet/student.jsp HTTP/1.1" 200 533
+0:0:0:0:0:0:0:1 - - [01/Feb/2023:16:48:57 +0530] "POST /FirstServlet/StudentServlet HTTP/1.1" 200 24
+127.0.0.1 - - [01/Feb/2023:17:19:25 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [01/Feb/2023:17:19:26 +0530] "GET /FirstServlet/student.jsp HTTP/1.1" 200 533
+0:0:0:0:0:0:0:1 - - [01/Feb/2023:17:19:34 +0530] "POST /FirstServlet/StudentServlet HTTP/1.1" 200 146
+0:0:0:0:0:0:0:1 - - [01/Feb/2023:17:19:49 +0530] "GET /FirstServlet/student.jsp HTTP/1.1" 200 533
+0:0:0:0:0:0:0:1 - - [01/Feb/2023:17:20:02 +0530] "POST /FirstServlet/StudentServlet HTTP/1.1" 200 150
